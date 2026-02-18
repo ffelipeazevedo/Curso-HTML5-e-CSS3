@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <hr>
+    <p>Tente abrir essa imagem em varios dispositivos ou aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/300x300.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/700x700.png" type="image/png">
+        <img src="imagens/1000x1000.png" alt="Imagem G">
+    </picture>
+</body>
+</html>
