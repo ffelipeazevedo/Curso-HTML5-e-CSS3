@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Vídeos Local</h1>
+    <p><b>Esse vídeo está sendo hospedado no meu próprio servidor</b></p>
+    <hr>
+    <video width="800px" controls  autoplay loop><!--Utiliza-se Poster para adicionar Capa no vídeo-->
+        <source src="midia/video-mp4.mp4" type="video/mp4">
+        <source src="midia/video-webm.webm" type="video/webm">
+        <source src="midia/video-m4v.m4v" type="video/m4v">
+        <p>Seu navegador não suporta o elemento de vídeo - <a href="midia/video-mp4.mp4">Clique aqui</a> para baixar o vídeo</p>
+    </video>
+    <hr>
+    <h1>Inserindo Vídeos do YouTube</h1>
+    <p><b>Esse vídeo está sendo hospedado no YouTube</b></p>
+    <iframe 
+        width="800" height="500" 
+        src="https://www.youtube.com/embed/TNF1tWNugy8?si=0i9jnA9bJQi_3_Ha" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+    </iframe>
+</body>
+</html>
