@@ -1,33 +1,84 @@
-/* styles for tabela de hardware */
+/* ===== Reset básico ===== */
+* {
+    box-sizing: border-box;
+}
+
+/* ===== Página ===== */
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
-    color: #333;
-}
-h1 {
+    background: linear-gradient(135deg, #f4f7fb, #e9eef5);
+    margin: 0;
+    padding: 40px 20px;
+    color: #222;
     text-align: center;
-    color: #000000;
-    margin-bottom: 20px;
-    font-weight: bolder;
 }
+
+/* ===== Título ===== */
+h1 {
+    margin-bottom: 30px;
+    color: #111827;
+}
+
+/* ===== Tabela ===== */
 table {
-    width: 100%;
+    width: 80%;
+    margin: auto;
     border-collapse: collapse;
-    background-color: #fff;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
-th, td {
-    padding: 12px;
-    text-align: left;
-}
+
+/* ===== Cabeçalho ===== */
 thead {
-    background-color: #000000;
-    color: #fff;
+    background-color: #4c2cff;
+    color: white;
 }
+
+th {
+    padding: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* ===== Células ===== */
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* ===== Linhas alternadas ===== */
 tbody tr:nth-child(even) {
-    background-color: #e6f2ff;
+    background-color: #f9fafb;
 }
+
+/* ===== Efeito hover ===== */
+tbody tr:hover {
+    background-color: #eef2ff;
+    transition: 0.2s;
+}
+
+/* ===== Rodapé ===== */
+tfoot {
+    background-color: #39455a;
+    color: white;
+    font-size: 16px;
+}
+
 tfoot td {
-    font-weight: bold;
-    background-color: #ddd;
+    padding: 15px;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 700px) {
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
 }
